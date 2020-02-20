@@ -1,0 +1,104 @@
+@charset "UTF-8";
+* {
+  font-weight: 700;
+  font-size: 30px;
+  padding: 0;
+  margin: 0;
+}
+
+.box_1 {
+  border: solid black 4px;
+  border-radius: 50px;
+  background-color: greenyellow;
+  padding: 50px;
+  width: 400px;
+  height: 400;
+  margin: 100px auto;
+}
+
+.box_1 h1 {
+  text-align: center;
+  padding-bottom: 30px;
+  font-weight: 700;
+  font-size: 80px;
+}
+
+.box_1 .color-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-top: 20px;
+}
+
+.box_1 .color-box:hover {
+  border: none 4px black;
+}
+
+.box_1 .color-box .s_box {
+  border: solid black 4px;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  background-color: #eee;
+  margin: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.box_1 .color-box .s_box:hover {
+  border: solid 4px fuchsia;
+}
+
+.box_1 .color-box .s_box:hover {
+  background-color: yellow;
+}
+
+.box_1 .color-box .green {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: solid black 4px;
+  background-color: greenyellow;
+}
+
+.box_1 .color-box .green:hover {
+  background-color: orangered;
+}
+
+.box_1 .color-box .green::after {
+  content: '👀';
+}
+
+.box_1 .color-box .orange {
+  background-color: yellow;
+}
+
+.box_1 .color-box .orange:hover {
+  background-color: black;
+}
+
+.box_1 .color-box .orangered {
+  background-color: orangered;
+}
+
+.box_1 .color-box .orangered:hover {
+  background-color: #eee;
+}
+/*# sourceMappingURL=sample.css.map */

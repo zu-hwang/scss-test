@@ -1,0 +1,81 @@
+@import './var.scss';
+
+* {
+	font-weight: 700;
+	font-size: 30px;
+	padding: 0;
+	margin: 0;
+}
+
+@mixin flexCenter($align, $type, $color: $bl) {
+	display: flex;
+	justify-content: center;
+	align-items: $align;
+	flex-wrap: wrap;
+	&:hover {
+		border: $type 4px $color;
+	}
+}
+
+.box_1 {
+	border: $border;
+	border-radius: 50px;
+	background-color: $gy;
+	padding: 50px;
+	width: $px800;
+	height: 800 - 400;
+	margin: 100px auto;
+
+	h1 {
+		text-align: center;
+		padding-bottom: 30px;
+		font-weight: 700;
+		font-size: 80px;
+		// align-items: ;
+	}
+	.color-box {
+		@include flexCenter(center, none);
+		padding-top: 20px;
+		.s_box {
+			border: $border;
+			border-radius: 50%;
+			width: 100px;
+			height: 100px;
+			background-color: $lg;
+			margin: 12px;
+			// @include flexCenter(flex-start);
+			@include flexCenter(center, solid, fuchsia);
+			&:hover {
+				background-color: $yl;
+			}
+		}
+		.green {
+			width: 40px;
+			height: 40px;
+			border-radius: 50%;
+			border: $border;
+			background-color: $gy;
+			&:hover {
+				background-color: $or;
+			}
+			&::after {
+				content: '👀';
+			}
+		}
+
+		.orange {
+			background-color: $yl;
+			&:hover {
+				background-color: $bl;
+			}
+		}
+
+		.orangered {
+			background-color: $or;
+
+			&:hover {
+				background-color: $lg;
+			}
+		}
+	}
+}
